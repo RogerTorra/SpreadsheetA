@@ -22,9 +22,15 @@ public class Sheet {
         this.cols = size;
         Cells = new HashMap<>();
     }
-    public void setCell(String name,double value){
+    public void setCell(String name,double value) throws NullPointerException{
         Cell nCell = new Cell(value);
-        Cells.put(name,nCell);
+        if(validateSize()){
+            Cells.put(name,nCell);
+        }else{
+            throw new NullPointerException();
+        }
+        String ms = Integer.toString(Cells.size());
+        System.out.println(ms);
     }
      void setCell(String name) {
         Cell nCell = new Cell();
@@ -36,6 +42,13 @@ public class Sheet {
     
     public void clear(){
         Cells.clear();
+    }
+
+    private Boolean validateSize() {
+        if(Cells.size() > rows*cols){
+            return false; 
+        }
+        return true;
     }
    
 }
