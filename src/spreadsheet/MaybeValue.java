@@ -10,6 +10,6 @@ package Spreadsheet;
  *
  * @author rtv1
  */
-public abstract class MaybeValue {
+public interface MaybeValue extends Expression{
     public abstract Boolean hasValue();
 }

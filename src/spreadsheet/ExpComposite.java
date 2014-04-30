@@ -3,10 +3,11 @@
  * and open the template in the editor.
  */
 package spreadsheet;
+
 /**
  *
  * @author Roger_Torra
  */
-class Expression {
+public class ExpComposite extends Expression{
     
 }

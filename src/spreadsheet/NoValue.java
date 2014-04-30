@@ -10,7 +10,7 @@ package Spreadsheet;
  *
  * @author rtv1
  */
-class NoValue extends MaybeValue {
+class NoValue implements MaybeValue {
 
     public NoValue() {
     }

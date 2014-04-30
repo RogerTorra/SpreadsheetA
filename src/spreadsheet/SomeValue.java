@@ -10,7 +10,7 @@ package Spreadsheet;
  *
  * @author rtv1
  */
-public class SomeValue extends MaybeValue {
+public class SomeValue implements MaybeValue {
     double value;
     public SomeValue(double value) {
         this.value = value;

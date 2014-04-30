@@ -17,6 +17,9 @@ public class Spreadsheet {
     public static void put(String name,double value){
         SHEET.setCell(name,value);
     }
+    public static void put(String name,Expression value){
+        SHEET.setCell(name,value);
+    }
      public static void put(String name){
         SHEET.setCell(name);
     }
@@ -26,7 +29,5 @@ public class Spreadsheet {
     public static void clear(){
         SHEET.clear();
     }
-    public static Expression plus(double a, double b){
-        return new Expression();
-    }
+
 }
