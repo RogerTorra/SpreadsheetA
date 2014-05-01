@@ -24,7 +24,11 @@ public class Spreadsheet {
         SHEET.setCell(name);
     }
     public static MaybeValue get(String name){
-       return SHEET.getCell(name).getMvalue(); 
+       if(SHEET.getCell(name) == null){
+           return null;
+       }else{
+        return SHEET.getCell(name).getMvalue(); 
+       }
     }
     public static void clear(){
         SHEET.clear();
