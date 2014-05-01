@@ -12,7 +12,7 @@ package spreadsheet;
  */
 public class SomeValue extends Expression implements MaybeValue {
     double value;
-    String expression;
+    Expression expression;
     public SomeValue(String a, String b) {
         super(a, b);
     }
@@ -20,7 +20,7 @@ public class SomeValue extends Expression implements MaybeValue {
     public SomeValue(double value) {
         this.value = value;
     }
-    public SomeValue(String value) {
+    public SomeValue(Expression value) {
         this.expression = value;
     }
 
@@ -56,11 +56,11 @@ public class SomeValue extends Expression implements MaybeValue {
         return false;
     }
     @Override
-    public String getValue(){
+    public Double getValue(){
         if(value != 0){
-            return Double.toString(value);
+            return value;
         }else{
-            return expression;
+            return expression.eval();
         }
         
     }

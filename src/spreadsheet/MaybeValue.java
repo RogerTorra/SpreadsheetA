@@ -12,5 +12,5 @@ package spreadsheet;
  */
 public interface MaybeValue{
     public Boolean hasValue();
-    public String getValue();
+    public Double getValue();
 }

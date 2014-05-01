@@ -23,8 +23,8 @@ class NoValue extends Expression implements MaybeValue {
     }
 
     @Override
-    public String getValue() {
-        return "0";
+    public Double getValue() {
+        return 0.0;
     }
 
     
