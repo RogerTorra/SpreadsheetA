@@ -16,6 +16,10 @@ public class SomeValue implements MaybeValue {
         this.value = value;
     }
 
+    public SomeValue() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
     public String toString() {
         return "SomeValue{" + "value=" + value + '}';
     }

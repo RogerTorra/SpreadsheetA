@@ -18,6 +18,9 @@ class Cell {
     public Cell(double value) {
         this.mvalue = new SomeValue(value);
     }
+    public Cell(Expression value) {
+        this.mvalue = new SomeValue();
+    }
 
     public MaybeValue getMvalue() {
         return mvalue;

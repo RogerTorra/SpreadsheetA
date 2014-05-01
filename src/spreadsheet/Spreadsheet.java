@@ -37,7 +37,7 @@ public class Spreadsheet {
         return null;
     }
     public Expression plus(String a, String b){
-        return null;
+        return new Expression(a,b);
     }
     public Expression plus(Expression a, String b){
         return null;
