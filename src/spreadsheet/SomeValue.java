@@ -50,5 +50,8 @@ public class SomeValue extends Expression implements MaybeValue {
     public Boolean hasValue() {
         return true;
     }
+    public double getValue(){
+        return value;
+    }
     
 }

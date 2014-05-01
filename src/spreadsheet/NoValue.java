@@ -22,5 +22,10 @@ class NoValue extends Expression implements MaybeValue {
        return false;
     }
 
+    @Override
+    public double getValue() {
+        return 0;
+    }
+
     
 }

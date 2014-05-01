@@ -34,7 +34,7 @@ public class Spreadsheet {
      * Arithmetic Expressions
      */
     public static Expression plus(Double a, Double b){
-        return null;
+        return new Expression(a,b);
     }
     public static Expression plus(String a, String b){
         return new Expression(a,b);

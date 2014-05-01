@@ -15,15 +15,15 @@ public class Expression {
     public void get(Expression exp){}
     
     public double eval(){
-        return 40;
+        return result.getValue();
     }
     public Expression(String a, String b) {
         this.result = null;
     }
+    public Expression(double a, double b) {
+        this.result = new SomeValue(a+b);
+    }
     public Expression() {
         this.result = null;
-    }
-    public Expression plus(String a,String b){
-        return null;
     }
 }
