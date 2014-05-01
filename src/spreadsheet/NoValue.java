@@ -17,8 +17,10 @@ class NoValue extends Expression implements MaybeValue {
     }
     public NoValue(){
     }
+    @Override
     public Boolean hasValue() {
        return false;
     }
+
     
 }

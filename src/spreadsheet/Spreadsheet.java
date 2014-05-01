@@ -33,13 +33,13 @@ public class Spreadsheet {
     /*
      * Arithmetic Expressions
      */
-    public Expression plus(Double a, Double b){
+    public static Expression plus(Double a, Double b){
         return null;
     }
-    public Expression plus(String a, String b){
+    public static Expression plus(String a, String b){
         return new Expression(a,b);
     }
-    public Expression plus(Expression a, String b){
+    public static Expression plus(Expression a, String b){
         return null;
     }
 }

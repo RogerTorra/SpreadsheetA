@@ -46,6 +46,7 @@ public class SomeValue extends Expression implements MaybeValue {
         return true;
     }
 
+    @Override
     public Boolean hasValue() {
         return true;
     }
