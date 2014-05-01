@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package Spreadsheet;
+package spreadsheet;
 
 /**
  *
@@ -15,7 +15,6 @@ class NoValue implements MaybeValue {
     public NoValue() {
     }
 
-    @Override
     public Boolean hasValue() {
        return false;
     }

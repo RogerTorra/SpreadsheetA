@@ -4,12 +4,12 @@
  * and open the template in the editor.
  */
 
-package Spreadsheet;
+package spreadsheet;
 
 /**
  *
  * @author rtv1
  */
-public interface MaybeValue extends Expression{
-    public abstract Boolean hasValue();
+public interface MaybeValue{
+
 }

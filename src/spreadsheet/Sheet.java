@@ -1,4 +1,4 @@
-package Spreadsheet;
+package spreadsheet;
 
 
 import java.util.HashMap;
@@ -29,9 +29,13 @@ public class Sheet {
         }else{
             throw new NullPointerException();
         }
-        String ms = Integer.toString(Cells.size());
-        System.out.println(ms);
     }
+    public void setCell(String name, Expression value){
+       // Cell nCell = new Cell(value);
+        
+    }
+    
+    
      void setCell(String name) {
         Cell nCell = new Cell();
         Cells.put(name,nCell);

@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package Spreadsheet;
+package spreadsheet;
 
 /**
  *
@@ -16,19 +16,16 @@ public class SomeValue implements MaybeValue {
         this.value = value;
     }
 
-    @Override
     public String toString() {
         return "SomeValue{" + "value=" + value + '}';
     }
 
-    @Override
     public int hashCode() {
         int hash = 5;
         hash = 61 * hash + (int) (Double.doubleToLongBits(this.value) ^ (Double.doubleToLongBits(this.value) >>> 32));
         return hash;
     }
 
-    @Override
     public boolean equals(Object obj) {
         if (obj == null) {
             return false;
@@ -43,7 +40,6 @@ public class SomeValue implements MaybeValue {
         return true;
     }
 
-    @Override
     public Boolean hasValue() {
         return true;
     }

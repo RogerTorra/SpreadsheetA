@@ -1,4 +1,4 @@
-package Spreadsheet;
+package spreadsheet;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -29,5 +29,17 @@ public class Spreadsheet {
     public static void clear(){
         SHEET.clear();
     }
-
+    
+    /*
+     * Arithmetic Expressions
+     */
+    public Expression plus(Double a, Double b){
+        return null;
+    }
+    public Expression plus(String a, String b){
+        return null;
+    }
+    public Expression plus(Expression a, String b){
+        return null;
+    }
 }
