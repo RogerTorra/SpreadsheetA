@@ -31,7 +31,8 @@ public class Sheet {
         }
     }
     public void setCell(String name, Expression value){
-       // Cell nCell = new Cell(value);
+       Cell nCell = new Cell(value);
+       Cells.put(name, nCell);
         
     }
     
