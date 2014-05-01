@@ -10,11 +10,13 @@ package spreadsheet;
  *
  * @author rtv1
  */
-class NoValue implements MaybeValue {
+class NoValue extends Expression implements MaybeValue {
 
-    public NoValue() {
+    public NoValue(String a, String b) {
+        super(a, b);
     }
-
+    public NoValue(){
+    }
     public Boolean hasValue() {
        return false;
     }

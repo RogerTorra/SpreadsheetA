@@ -10,6 +10,6 @@ package spreadsheet;
  *
  * @author rtv1
  */
-public interface MaybeValue extends Expression{
+public interface MaybeValue{
 
 }

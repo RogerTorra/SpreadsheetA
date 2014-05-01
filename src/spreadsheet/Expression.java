@@ -13,10 +13,16 @@ public class Expression {
     
     public void add(Expression exp){}
     public void get(Expression exp){}
+    
+    public double eval(){
+        return 0;
+    }
     public Expression(String a, String b) {
         this.result = null;
     }
-    
+    public Expression() {
+        this.result = null;
+    }
     public Expression plus(String a,String b){
         return null;
     }

@@ -10,15 +10,17 @@ package spreadsheet;
  *
  * @author rtv1
  */
-public class SomeValue implements MaybeValue {
+public class SomeValue extends Expression implements MaybeValue {
     double value;
+
+    public SomeValue(String a, String b) {
+        super(a, b);
+    }
+
     public SomeValue(double value) {
         this.value = value;
     }
-
-    public SomeValue() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
+    
 
     public String toString() {
         return "SomeValue{" + "value=" + value + '}';

@@ -19,7 +19,7 @@ class Cell {
         this.mvalue = new SomeValue(value);
     }
     public Cell(Expression value) {
-        this.mvalue = new SomeValue();
+        this.mvalue = new SomeValue(value.eval());
     }
 
     public MaybeValue getMvalue() {
